@@ -22,7 +22,7 @@ class DestinationModel{
         return $query->execute([$IDDESTINATION]);
     }
 
-    public function editDestination($name, $description, $attractions, $season, $IDDESTINATION){
+    public function editDestination($IDDESTINATION, $name, $description, $attractions, $season) {
         $query = $this->db->prepare('UPDATE destination SET name = ?, description = ?, attractions = ?, season = ? WHERE IDDESTINATION = ?');
         return $query->execute([$name, $description, $attractions, $season, $IDDESTINATION]);
     }

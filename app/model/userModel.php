@@ -1,6 +1,4 @@
 <?php
-
-
     class UserModel{
         private $db;
         public function __construct() {
@@ -23,8 +21,5 @@
             $query =$this->db->prepare('DELETE FROM usuario WHERE IDUSUARIO = ?');
             return $query->execute([$IDUSUARIO]); 
         }
-
-    
-
     }
     
