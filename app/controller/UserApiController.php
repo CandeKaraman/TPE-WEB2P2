@@ -1,7 +1,7 @@
 <?php
-    require_once "app/model/userModel.php";
+    require_once "app/model/userApiModel.php";
     require_once "libs/jwt.php";
-    require_once "app/view/json.view.php";
+    require_once "app/view/JSONView.php";
      class UserApiController {
         private $model;
         private $view;

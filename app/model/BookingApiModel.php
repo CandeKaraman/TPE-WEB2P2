@@ -1,5 +1,5 @@
 <?php
-class BookingModel{   
+class BookingApiModel{   
     private  $db;
     public function __construct()
     {
