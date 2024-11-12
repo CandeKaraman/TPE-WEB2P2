@@ -1,6 +1,6 @@
 <?php
     require_once 'app/model/DestinationModel.php';
-    require_once "app/view/json.view.php";
+    require_once 'app/view/JSONView.php';
      class DestinationController {
         private $model;
         private $view;

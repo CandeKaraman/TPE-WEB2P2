@@ -1,5 +1,5 @@
 <?php
-require_once 'app/view/jsonView.php';
+require_once 'app/view/JSONView.php';
 require_once 'app/model/BookingModel.php';
 
     class BookingController{
