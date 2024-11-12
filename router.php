@@ -9,8 +9,9 @@
     $router = new Router();
     $router->addMiddleware(new JWTAuthMiddleware());
 
-    $router->addRoute('reservas', 'GET','BookingController','getAll');
     $router->addRoute('destinations','GET','DestinationController', 'getAll');
+    $router->addRoute('booking/:id', 'GET', 'BookingController', 'getBooking');
+    $router->addRoute('booking/:id',  'PUT', 'BookingController','editBooking');
 
 
     $router->route($_GET['resource'], $_SERVER['REQUEST_METHOD']);
