@@ -1,5 +1,5 @@
 <?php
-    class UserModel{
+    class UserApiModel{
         private $db;
         public function __construct() {
             $this->db = new PDO('mysql:host=localhost; dbname=sistemadereservas; charser= utf8', 'root','');

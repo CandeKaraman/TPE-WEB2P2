@@ -1,13 +1,13 @@
 <?php
-    require_once "app/model/userModel.php";
+    require_once "app/model/userApiModel.php";
     require_once "libs/jwt.php";
-    require_once 'app/view/JSONView.php';
+    require_once "app/view/JSONView.php";
      class UserApiController {
         private $model;
         private $view;
 
         public function __construct() {
-            $this->model = new UserModel();
+            $this->model = new UserApiModel();
             $this->view = new JSONView();
         }
 

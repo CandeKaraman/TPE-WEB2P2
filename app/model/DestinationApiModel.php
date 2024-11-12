@@ -1,6 +1,6 @@
 <?php
 
-class DestinationModel{
+class DestinationApiModel{
     private $db;
     public function __construct() {
         $this->db = new PDO('mysql:host=localhost; dbname=sistemadereservas; charser= utf8', 'root','');
@@ -14,7 +14,10 @@ class DestinationModel{
 
     public function insertDestination($name, $description, $attractions, $season){
         $query = $this->db->prepare("INSERT INTO destination(name, description, attractions, season) VALUES (?, ?, ?, ?)");
-        return $query->execute([$name, $description, $attractions, $season]);
+        $query->execute([$name, $description, $attractions, $season]);
+       
+        $id = $this->db->lastInsertId();
+        return $id;
     }
 
     public function deleteDestination($IDDESTINATION){
