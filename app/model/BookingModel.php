@@ -38,6 +38,13 @@ class BookingModel{
         return $reservas;
     }
 
+    public function getAllBookings(){
+        $query= $this->db->prepare('SELECT* FROM reserva');
+        $query->execute();
+        $reservas= $query->fetchAll(PDO::FETCH_OBJ);
+        return $reservas;
+    }
+
     }
     
 
