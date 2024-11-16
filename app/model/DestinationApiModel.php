@@ -6,8 +6,23 @@ class DestinationApiModel{
         $this->db = new PDO('mysql:host=localhost; dbname=sistemadereservas; charser= utf8', 'root','');
     }
     
-    public function getDestinations(){
-        $query = $this->db->prepare('SELECT * FROM destination');
+    public function getDestinations($orderBy){
+        $sql= 'SELECT * FROM destination';
+        if($orderBy){
+            switch ($orderBy) {
+                case 'name':
+                    $sql .= ' ORDER BY name';
+                    break;
+                case 'season':
+                    $sql .= ' ORDER BY season';
+                    break;
+                case 'IDDESTINATION ':
+                    $sql .= 'ORDER BY IDDESTINATION ';
+                    break;
+            }
+
+        }
+        $query = $this->db->prepare($sql);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_OBJ);
     }
