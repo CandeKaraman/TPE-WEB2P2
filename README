@@ -14,7 +14,7 @@ Endpoints
 •	Modificar una reserva --> PUT --> http://localhost/TPE-WEB2P2/api/booking/:id
 •	Obtener una reserva por id --> GET --> http://localhost/TPE-WEB2P2/api/booking/:id
 •	Listar todas las reservas --> GET --> http://localhost/TPE-WEB2P2/api/bookings
-•   Ordenar destinos por nombre --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=name
-•   Ordenar destinos por temporada --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=season
-•   Ordenar destinos por id --> GET --> http://localhost/TPE-WEB2P2/api/destinationorderBy=IDDESTINATION
+• Ordenar destinos por nombre --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=name
+• Ordenar destinos por temporada --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=season
+• Ordenar destinos por id --> GET --> http://localhost/TPE-WEB2P2/api/destinationorderBy=IDDESTINATION
 
