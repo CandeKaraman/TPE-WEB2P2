@@ -8,13 +8,13 @@ Creamos una API REST la cual provee un servicio para gestionar reservas y destin
 
 Endpoints
 
-•	Listar todos los destino --> GET --> http://localhost/TPE-WEB2P2/api/destinations
-•	Obtener destino por id -->  GET --> http://localhost/TPE-WEB2P2/api/destinations/:id 
-•	Agregar un destino --> POST --> http://localhost/TPE-WEB2P2/api/destination 
-•	Modificar una reserva --> PUT --> http://localhost/TPE-WEB2P2/api/booking/:id
-•	Obtener una reserva por id --> GET --> http://localhost/TPE-WEB2P2/api/booking/:id
-•	Listar todas las reservas --> GET --> http://localhost/TPE-WEB2P2/api/bookings
-• Ordenar destinos por nombre --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=name
-• Ordenar destinos por temporada --> GET --> http://localhost/TPE-WEB2P2/api/destination?orderBy=season
-• Ordenar destinos por id --> GET --> http://localhost/TPE-WEB2P2/api/destinationorderBy=IDDESTINATION
+•	Listar todos los destino --> GET --> http://localhost/TPE-WEB2P3-master/api/destinations
+•	Obtener destino por id -->  GET --> http://localhost/TPE-WEB2P3-master/api/destinations/:id 
+•	Agregar un destino --> POST --> http://localhost/TPE-WEB2P3-master/api/destination 
+•	Modificar una reserva --> PUT --> http://localhost/TPE-WEB2P3-master/api/booking/:id
+•	Obtener una reserva por id --> GET --> http://localhost/TPE-WEB2P3-master/api/booking/:id
+•	Listar todas las reservas --> GET --> http://localhost/TPE-WEB2P3-master/api/bookings
+• Ordenar destinos por nombre --> GET --> http://localhost/TPE-WEB2P3-master/api/destination?orderBy=name
+• Ordenar destinos por temporada --> GET --> http://localhost/TPE-WEB2P3-master/api/destination?orderBy=season
+• Ordenar destinos por id --> GET --> http://localhost/TPE-WEB2P3-master/api/destinationorderBy=IDDESTINATION
 
